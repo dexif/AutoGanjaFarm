@@ -9,7 +9,7 @@
 // @match          http://www.ganjawars.ru/ferma.php*
 // @match          http://ganjawars.ru/ferma.php*
 // @grant          none
-// @version        0.3 [beta]
+// @version        0.3.1 [beta]
 // @author         Evgeniy [Dexif] Spitsyn (http://Spitsyn.net)
 // @license        GPL v3
 // ==/UserScript==
@@ -23,6 +23,7 @@ var plantid = 3; //Номер растения на странице 1-4
 
 var a = document.getElementsByTagName("body")[0].innerHTML;
 var t = 1;
+var interval = null;
 pageid = (pageid < 1) ? 0 : (pageid - 1);
 plantid = (plantid < 1) ? 0 : (plantid - 1);
 if (a.match(/Грядка пустая./i) != null) {
@@ -59,7 +60,7 @@ function searchPageUrl(arr) {
 	for (var i = 0; i < arr.length; i++) {
 		if ((arr[i].href.indexOf("page_id=" + pageid) > -1) && arr[i].href.indexOf("#") == -1) {
 			//window.location.assign(arr[i].href);
-			i = self.setInterval("window.location.assign('" + arr[i].href + "');", (Math.floor(Math.random() * 3000)));
+			interval = self.setInterval("window.location.assign('" + arr[i].href + "');", (Math.floor(Math.random() * 3000)));
 			//console.log("searchUrl:"+arr[i].href);
 			return true;
 		}
@@ -74,7 +75,7 @@ function checktimer() {
 	} else {
 		if (a.match(/через ([0-9]*) мин/i) != null) {
 			t = (Math.floor(Math.random() * a.match(/через ([0-9]*) мин/i)[1])) + (Math.floor(Math.random() * 3));
-			i = self.setInterval("location.reload();", (((t == 0) ? 1 : t) * 60000));
+			interval = self.setInterval("location.reload();", (((t == 0) ? 1 : t) * 60000));
 			//console.log("checktimer:"+t);
 		}
 	}

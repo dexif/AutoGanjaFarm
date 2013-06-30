@@ -9,7 +9,7 @@
 // @match          http://www.ganjawars.ru/ferma.php*
 // @match          http://ganjawars.ru/ferma.php*
 // @grant          none
-// @version        0.3 [beta]
+// @version        0.3.1 [beta]
 // @author         Evgeniy [Dexif] Spitsyn (http://Spitsyn.net)
 // @license        GPL v3
 // ==/UserScript==

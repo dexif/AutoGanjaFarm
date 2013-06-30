@@ -29,7 +29,7 @@ HOW TO:
 
     В __Google Chrome__ дополнение [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
-1. Отредактировать строки раздела `//SETTINGS` в скрипте
+1.  Отредактировать строки раздела `//SETTINGS` в скрипте
 
     ```
         //SETTINGS
