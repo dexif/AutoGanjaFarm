@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Autoganjafarm : Userscrip, ganjawars, farm" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Autoganjafarm</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/dexif/AutoGanjaFarm">View on GitHub</a>
+
+          <h1 id="project_title">Autoganjafarm</h1>
+          <h2 id="project_tagline">Userscrip, ganjawars, farm</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/dexif/AutoGanjaFarm/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/dexif/AutoGanjaFarm/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%A4%D0%B5%D1%80%D0%BC%D1%8B-ganjawars" class="anchor" href="#%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%A4%D0%B5%D1%80%D0%BC%D1%8B-ganjawars"><span class="octicon octicon-link"></span></a>Автоматизация Фермы GanjaWars</h1>
+
+<p>License: GPL v3</p>
+
+<p><a href="http://spitsyn.net">Evgeniy Spitsyn</a></p>
+
+<p><strong>Внимание!</strong> Для работы скрипта необходимо чтобы была постоянно открыта страница фермы!</p>
+
+<h2>
+<a name="feautures" class="anchor" href="#feautures"><span class="octicon octicon-link"></span></a>FEAUTURES:</h2>
+
+<p>На данный момент скрипт умеет автоматически садить, поливать, собирать и вскапывать грядки.</p>
+
+<h2>
+<a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>TODO:</h2>
+
+<p>В ближайшее время будет добавлена карта посадок, чтобы иметь возможность автомтически садить нужные растения на нужных грядках :)</p>
+
+<p>Зачем я это пишу?</p>
+
+<ul>
+<li>Как говорится Just For Fun :)</li>
+</ul><h2>
+<a name="how-to" class="anchor" href="#how-to"><span class="octicon octicon-link"></span></a>HOW TO:</h2>
+
+<p>Установка:</p>
+
+<ol>
+<li>
+<p>В <strong>FireFox</strong> необходимо установить дополнение <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a></p>
+
+<p>В <strong>Google Chrome</strong> дополнение <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a></p>
+</li>
+<li>
+<p>Отредактировать строки раздела <code>//SETTINGS</code> в скрипте</p>
+
+<div class="highlight highlight-JS"><pre>    <span class="c1">//SETTINGS</span>
+    <span class="kd">var</span> <span class="nx">req</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>  <span class="c1">//Хотите ли вы чтобы перед посадкой скрипт спрашивал вас. (true|false)</span>
+    <span class="kd">var</span> <span class="nx">r</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>    <span class="c1">//Стандартный выбор если нет запроса садить/не садить (true|false)</span>
+    <span class="kd">var</span> <span class="nx">pageid</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>   <span class="c1">//Страница на которой ноходится растение (1-10)</span>
+    <span class="kd">var</span> <span class="nx">plantid</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span>  <span class="c1">//Номер растения на странице (1-4)</span>
+    <span class="c1">//SETTINGS</span>
+</pre></div>
+</li>
+<li><p>Установить скрипт</p></li>
+<li><p>Для работы скрипта необходимо чтобы постоянно была открыта страница фермы</p></li>
+</ol>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Autoganjafarm maintained by <a href="https://github.com/dexif">dexif</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-47494134-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
